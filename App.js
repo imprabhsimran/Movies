@@ -8,7 +8,6 @@ import MovieDetailScreen from "./components/MovieDetail.jsx";
 import TVShowsScreen from "./components/TVShows.jsx"; 
 import Search from "./components/Search";
 
-// Create navigators
 const Tab = createMaterialTopTabNavigator();
 const Stack = createStackNavigator();
 
@@ -54,11 +53,11 @@ function SearchStack() {
 
 export default function AppNavigator() {
   return (
-    <NavigationContainer>   {/* Wrap the navigator with NavigationContainer */}
+    <NavigationContainer>  
       <Tab.Navigator screenOptions={{
       tabBarStyle: { 
         backgroundColor: '#1E1E1E',
-        paddingTop: 42,// paddingTop equivalent to 2rem (32px)
+        paddingTop: 42,
       },
       tabBarActiveTintColor: '#FF6347',
       tabBarInactiveTintColor: '#B0B0B0',
