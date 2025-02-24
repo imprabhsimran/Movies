@@ -51,7 +51,7 @@ export default function MovieSearchScreen({ navigation }) {
                 items={[
                     { label: "Movies", value: "movie" },
                     { label: "TV Shows", value: "tv" },
-                    { label: "Both", value: "multi" },
+                    { label: "", value: "multi" },
                 ]}
                 style={{
                     inputIOS: styles.dropdownInput,
