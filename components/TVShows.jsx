@@ -8,7 +8,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const fetchTVShows = async (category, page) => {
     try {
-        const response = await axios.get(`${BASE_URL}/tv/${category}?api_key=${API_Key}&page=${page}&per_page=10`);  
+        const response = await axios.get(`${BASE_URL}/tv/${category}?api_key=${API_Key}&page=${page}&per_page=10`); 
+        return response.data;
     } catch (error) {
         console.error("Error fetching TV shows:", error.response ? error.response.data : error.message);
         return { results: [], total_pages: 1 };
